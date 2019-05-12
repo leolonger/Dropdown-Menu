@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dropdown Menu Design</title>
+	<style type="text/css">
+	    *{margin: 0;padding: 0;}
+	    body{
+	    	background-color: #5d6d7e;
+	    	margin-left: 250px;
+	    	margin-top: 20px;
+	    }
+		#container ul{
+			list-style: none;
+		}
+		#container ul li{
+			float: left;
+			width: 150px;
+			height: 50px;
+			border: .5px solid #fff;
+			/*border-radius: 25px;*/
+			line-height: 50px;
+			text-align: center;
+			background-color: transparent;
+			/*background-color: #8e44ad;*/
+		}
+		#container ul li a{
+			text-decoration: none;
+			color: #fff;
+		}
+		#container ul li:hover{
+			background-color: #85c1e9;
+		}
+		#container ul ul{
+			display: none;
+		}
+		#container ul ul li{
+			border: .2px solid #fff;
+			position: relative;
+		}
+		#container ul li:hover>ul{
+			display: block;
+		}
+		#container ul ul ul{
+			position: absolute;
+			top: 5px;
+			margin-left: 150px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<ul>
+			<li>
+			    <a href="">首页</a>
+			</li>
+			<li>
+				<a href="">解决方案</a>
+				<ul>
+					<li><a href="">区域医疗解决方案</a></li>
+					<li><a href="">双向转诊解决方案</a></li>
+					<li><a href="">移动医疗解决方案</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">产品中心</a>
+				<ul>
+					<li>
+						<a href="">智慧医疗云平台</a>
+						<ul>
+							<li><a href="">区域PASS系统</a></li>
+							<li><a href="">双向转诊系统</a></li>
+						</ul>
+					</li>
+					<li><a href="">医疗设备管理系统</a></li>
+					<li><a href="">医用耗材管理系统</a></li>
+					<li><a href="">妇幼保健管理系统</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">成功案例</a>
+			</li>
+			<li>
+				<a href="">关于我们</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
